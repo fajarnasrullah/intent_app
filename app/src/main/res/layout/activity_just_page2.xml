@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JustPage2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home3"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                />
+
+            <TextView
+                style="@style/TextContent.BodyMedium.Gray.MarginAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image"
+
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/TextContent.HeadlineMedium.Bold"
+            android:id="@+id/tvSecondPage"
+            android:text="Second Page"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            style="@style/TextContent.TitleMedium.Bold.MarginLeftRight"
+            android:id="@+id/tvSecondPage2"
+            android:layout_marginBottom="8dp"
+            android:text="Ini Text"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Merek"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Macbook Pro"
+                    android:textSize="20sp"
+                    android:layout_marginStart="16dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Spesifikasi"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Macbook Pro\n kfnkwefbewkfbefkefkebf\nvlwknvkjv"
+                    android:textSize="20sp"
+                    android:layout_marginStart="16dp"/>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Harga"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 23.000.000"
+                    android:textSize="20sp"
+                    android:layout_marginStart="16dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Review"
+                    android:textSize="20sp"
+                    android:textStyle="italic"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet,\n consectetur adipiscing elit, \nsed do eiusmod tempor incididunt \n ut labore et dolore magna aliqua. \nUt enim ad minim veniam, \nquis nostrud exercitation ullamco \nlaboris nisi ut aliquip ex ea \ncommodo consequat. \nDuis aute irure dolor in reprehenderit \nin voluptate velit esse cillum \ndolore eu fugiat nulla pariatur. \nExcepteur sint occaecat cupidatat non proident, \nsunt in culpa qui officia deserunt\n mollit anim id est laborum."
+                    android:textSize="20sp"
+                    android:layout_marginStart="16dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            style="@style/ButtonGeneral.SecondaryVariant"
+            android:text="Buy it now"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_heroes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

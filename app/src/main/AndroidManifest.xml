@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IntentApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".forMenu.Room.NoteRoomAddUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forMenu.Room.NoteRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forMenu.SQLite.JustFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forMenu.SQLite.NoteAddUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forMenu.DataStore.DataStoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forMenu.SettingsPreferences.SettingsPreferencesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forMenu.PageSharedPreferences.FormUserPreferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forMenu.PageSharedPreferences.SharedPreferencesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forMenu.SaveTextFileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forMenu.ForVMActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forMenu.RestoRetrofit.RestaurantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forMenu.BackgroundThreadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forMenu.ForTabLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forMenu.PageWithBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMoveForResult"
+            android:exported="false" />
+        <activity
+            android:name=".JustPage2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
